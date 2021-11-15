@@ -1,0 +1,221 @@
+
+
+img {
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+
+.pageTop {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px black solid;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 950px;
+    padding: 10px calc(50% - 475px);
+    z-index: 10;
+    margin-bottom: 30px;
+}
+
+.logoImg {
+    height: 29px;
+    width: 103px;
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#searchBar {
+    text-align: center;
+    height: 24px;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    border: gray solid 1px;
+}
+
+#searchBar::placeholder {
+    color: rgb(58, 58, 58);
+}
+
+#searchBar:focus {
+    border: rgb(115, 217, 252) 1px solid;
+    outline: none;
+}
+
+#searchBar:focus::placeholder {
+    color: rgb(241, 241, 241);
+}
+
+.searchIcon {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    color: transparent;
+}
+
+.navIcons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navIcons svg {
+    margin: 0 10px;
+}
+
+.navIcons img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.profile {
+    z-index: 2;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 630px 70px 200px 50px;
+    grid-template-rows: 40px 40px;
+    align-items: center;
+    padding: 0px calc(50% - 475px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.profileIcon {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    grid-column: 2 / 3;
+    grid-row: 1/3;
+}
+.profile h2 {
+    grid-column-start: 3;
+    font-size: 14px;
+    font-weight: normal;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+}
+.profile h3 {
+    grid-column-start: 3;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+}
+.profile a {
+    grid-column-start: 4;
+    grid-row: 1 / 3;
+    text-decoration: none;
+    color: rgb(0,149,246);
+    font-weight: bold;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile a:visited {
+    font-weight: bold;
+    color: rgb(0,149,246);
+}
+
+article {
+    position: relative;
+    z-index: 3;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 616px;
+    margin-left: max(calc(50% - 475px), 0px);
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.postTop {
+    width: 616px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.posterIcon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.posterName {
+    margin-left: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+button.postOptions {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+button.postOptions:hover {
+    cursor: pointer;
+    background-color: rgb(206, 206, 206);
+}
+
+button.postOptions:active {
+    background-color: gray;
+}
+
+
+.postImage {
+    width: 616px;
+    height: auto;
+}
+
+.postBottom {
+    margin: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+.postBottom [type=button] {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.postBottom [type=button]:hover {
+    cursor: pointer;
+    background-color: rgba(255, 86, 86, 0.61);
+}
+
+.postBottom [type=button]:active {
+    background-color: red;
+}
+
+#buttonSave {
+    margin-left: auto;
+}
